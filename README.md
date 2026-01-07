@@ -21,3 +21,11 @@ Key steps performed:
 - Resulted in 11 NULL values in `TotalCharges`, corresponding to customers with zero tenure.
 - Created a binary churn flag (`churn_flag`) to simplify churn analysis.
 - Preserved the original raw table and created a separate clean table following best practices.
+
+## Key KPIs & Insights
+
+- The overall churn rate is approximately 26–27%, indicating a significant retention challenge.
+- Churned customers have higher average monthly charges compared to retained customers.
+- Customers who churn tend to have significantly shorter tenure.
+- Month-to-month contracts show the highest churn rate, while long-term contracts have much lower churn.
+- Monthly revenue at risk from churned customers represents a substantial portion of total revenue.
