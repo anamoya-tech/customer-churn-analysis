@@ -10,3 +10,14 @@ Initial exploration of the raw dataset revealed the following:
 - No missing values were found in the `TotalCharges` column.
 - The `TotalCharges` field is stored as a STRING and requires type conversion.
 - Approximately 26–27% of customers have churned.
+
+## Data Cleaning
+
+The raw dataset was transformed into a clean analytical table (`telco_churn_clean`) to ensure consistency and reliability for analysis.
+
+Key steps performed:
+- Converted financial fields (`MonthlyCharges`, `TotalCharges`) to numeric data types.
+- Identified non-numeric blank values in `TotalCharges` and standardized them using `TRIM` and `NULLIF` before applying safe type casting.
+- Resulted in 11 NULL values in `TotalCharges`, corresponding to customers with zero tenure.
+- Created a binary churn flag (`churn_flag`) to simplify churn analysis.
+- Preserved the original raw table and created a separate clean table following best practices.
